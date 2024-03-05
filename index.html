@@ -13,7 +13,7 @@
 <body onload=brython({"debug":1}) ><!-- remove the 1 to leave debug mode -->
     <noscript>Please enable Javascript to view this page correctly</noscript>
 
-    <div id="content" style="max-width: 900px; min-height: 400px;">
+    <div id="content" style="max-width: 900px;">
         <div id="intro" >
             <h1>Spider Genus Naming Challenge</h1>
             <p>
@@ -22,9 +22,15 @@
                 The taxon names don't need to be case-sensitive.<br/>
                 If you go 10 seconds without entering another valid genus name, the game ends!
             </p>
+            <p>
+                To begin, enter the following command into the console:
+                <blockquote>
+                    exec(open("spiders.py").read())
+                </blockquote>
+            </p>
         </div>
     
-        <div id="code" class="codearea" style="border-style: double;" contenteditable></div>
+        <div id="code" class="codearea" style="border-style: double; min-height: 400px;" contenteditable></div>
 
     <script type="text/python3">
      from interpreter import Interpreter
