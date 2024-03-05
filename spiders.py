@@ -199,12 +199,13 @@ def quit_or_replay():
 #   Active gameplay begins after this point   #
 ###############################################
 
+''' ### Commenting this out for online experiment ###
 # Introduce the game
 print_header(WIDTH,TITLE)
 print(SUMMARY)
 
-# Commenting this out for online experiment
 # get_scores()
+'''
 
 # Initiate gameplay loop
 play_game()
