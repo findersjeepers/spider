@@ -13,9 +13,18 @@
 <body onload=brython({"debug":1}) ><!-- remove the 1 to leave debug mode -->
     <noscript>Please enable Javascript to view this page correctly</noscript>
 
-    <div id="code" class="codearea" style="border-style: double; max-width: 900px; min-height: 400px;" contenteditable></div>
-
-    <div id="content"></div>
+    <div id="content" style="max-width: 900px; min-height: 400px;">
+        <div id="intro" >
+            <h1>Spider Genus Naming Challenge</h1>
+            <p>
+                This is a simple game where you name as many genera from a spider family as you can.<br/>
+                Once you select a family, you will be prompted to submit genus names one at a time.<br/>
+                The taxon names don't need to be case-sensitive.<br/>
+                If you go 10 seconds without entering another valid genus name, the game ends!
+            </p>
+        </div>
+    
+        <div id="code" class="codearea" style="border-style: double;" contenteditable></div>
 
     <script type="text/python3">
      from interpreter import Interpreter
@@ -23,7 +32,7 @@
      # Start an interactive interpreter in textarea with id "code"
      Interpreter("code")
  </script>
-
+    </div>
 </body>
 
 </html>
