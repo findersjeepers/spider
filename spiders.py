@@ -100,6 +100,7 @@ def get_pb(filename):
 
     return pb
 
+''' ### Commenting out this section for online experiment ###
 # Display all current personal high scores
 def get_scores():
     filelist = glob.glob("pb_for_*ae.txt")
@@ -113,6 +114,7 @@ def get_scores():
             total_pb = total_pb + family_pb
             print(family_name, "-", family_pb)
         print(total_pb, "genera total")
+'''
 
 # Calculate time remaining
 def countdown(reference_time):
@@ -201,7 +203,8 @@ def quit_or_replay():
 print_header(WIDTH,TITLE)
 print(SUMMARY)
 
-get_scores()
+# Commenting this out for online experiment
+# get_scores()
 
 # Initiate gameplay loop
 play_game()
